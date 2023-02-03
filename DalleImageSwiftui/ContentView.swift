@@ -13,6 +13,8 @@ struct ContentView: View {
     @State private var image: UIImage? = nil
     @State private var loader = false
     
+    @StateObject var dalle = DalleViewModel()
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -22,6 +24,21 @@ struct ContentView: View {
                 Button {
                     loader = true
                     image = nil
+                    
+                    Task {
+                        do {
+                            let response = try await dalle.generateImage(text: text)
+                            if let url = response.data.map(\.url).first {
+                                let (data, _) = try await URLSession.shared.data(from: url)
+                                image = UIImage(data: data)
+                                loader = false
+                            }
+                        } catch {
+                            print(error)
+                        }
+                    }
+                    
+                    
                 } label: {
                     Text("generate")
                         .font(.title2)

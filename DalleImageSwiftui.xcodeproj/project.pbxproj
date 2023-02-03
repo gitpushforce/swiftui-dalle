@@ -11,6 +11,8 @@
 		969567D8298D6E6700E7541A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969567D7298D6E6700E7541A /* ContentView.swift */; };
 		969567DA298D6E6900E7541A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969567D9298D6E6900E7541A /* Assets.xcassets */; };
 		969567DD298D6E6900E7541A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 969567DC298D6E6900E7541A /* Preview Assets.xcassets */; };
+		969567E4298D7B3200E7541A /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969567E3298D7B3200E7541A /* ImageModel.swift */; };
+		969567E6298D7B8000E7541A /* DalleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969567E5298D7B8000E7541A /* DalleViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		969567D7298D6E6700E7541A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		969567D9298D6E6900E7541A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		969567DC298D6E6900E7541A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		969567E3298D7B3200E7541A /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
+		969567E5298D7B8000E7541A /* DalleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DalleViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 				969567D7298D6E6700E7541A /* ContentView.swift */,
 				969567D9298D6E6900E7541A /* Assets.xcassets */,
 				969567DB298D6E6900E7541A /* Preview Content */,
+				969567E3298D7B3200E7541A /* ImageModel.swift */,
+				969567E5298D7B8000E7541A /* DalleViewModel.swift */,
 			);
 			path = DalleImageSwiftui;
 			sourceTree = "<group>";
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				969567D8298D6E6700E7541A /* ContentView.swift in Sources */,
+				969567E6298D7B8000E7541A /* DalleViewModel.swift in Sources */,
+				969567E4298D7B3200E7541A /* ImageModel.swift in Sources */,
 				969567D6298D6E6700E7541A /* DalleImageSwiftuiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
